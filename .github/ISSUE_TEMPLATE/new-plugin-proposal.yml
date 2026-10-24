@@ -1,0 +1,37 @@
+name: New plugin proposal
+description: Propose a new module before building it
+labels: ["new-plugin"]
+body:
+  - type: input
+    id: module-name
+    attributes:
+      label: Module name
+      description: Lowercase, hyphen-free package name, for example "parlare".
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What does this module do for the person using Lumen
+      description: Describe the problem it solves in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: sdk-needs
+    attributes:
+      label: lumen_sdk events and capabilities needed
+      description: >-
+        List the existing SenseEvent types, PluginCapability values, and
+        ModelRegistry tasks this module needs. If something does not
+        exist yet in lumen_sdk, say so explicitly here.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope for a first version
+      description: >-
+        What will actually be implemented and tested in the first pull
+        request, versus what will be explicitly deferred.
+    validations:
+      required: true

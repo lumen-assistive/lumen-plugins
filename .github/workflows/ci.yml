@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  dart-ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        package: [vedere, sentire, protezione, famiglia]
+    uses: lumen-assistive/.github/.github/workflows/reusable-dart-ci.yml@main
+    with:
+      working-directory: packages/${{ matrix.package }}
+      target: "dart"
+
+  content-guard:
+    uses: lumen-assistive/.github/.github/workflows/reusable-content-guard.yml@main
