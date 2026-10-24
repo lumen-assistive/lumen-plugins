@@ -1,9 +1,13 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lumen-assistive/.github/main/profile/assets/logo-wordmark.png" alt="Lumen" width="200">
+</p>
+
 # lumen-plugins
 
 The plugin monorepo for [Lumen](https://github.com/lumen-assistive):
 every module ships here, as an independent package under `packages/`,
 rather than as a separate repository per module. New modules, from the
-community or the core team, are added through pull requests — see
+community or the core team, are added through pull requests. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Packages

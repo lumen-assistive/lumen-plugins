@@ -101,12 +101,12 @@ Requirements, checked in review:
    infrastructure that does not exist yet (a native bridge, a model
    that has not been converted), it is fine to ship the business logic
    you can implement and test today and state plainly in the package's
-   `README.md` what is deferred and why — see any existing package
-   under `packages/` for the expected tone and level of honesty. Do
-   not fabricate a feature that does not actually work.
+   `README.md` what is deferred and why. See any existing package under
+   `packages/` for the expected tone and level of honesty. Do not
+   fabricate a feature that does not actually work.
 5. **Licensing**: all code is Apache-2.0, matching the repository root
    `LICENSE`. If your plugin needs a model or dataset, it is not
-   bundled here — `lumen-models` tracks model licensing separately, and
+   bundled here. `lumen-models` tracks model licensing separately, and
    a plugin only references a model by id through `ModelRegistry`.
 6. **No AI tool references, no emoji, English for all code, comments,
    and documentation.** The commit-msg hook and CI's content check
