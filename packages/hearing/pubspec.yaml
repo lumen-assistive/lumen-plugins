@@ -1,0 +1,23 @@
+name: lumen_plugin_hearing
+description: >-
+  Lumen Hearing module (Italian: Sentire): offline live caption aggregation, sound alert
+  presentation mapping, and transcript session summaries.
+version: 0.2.0
+publish_to: none
+repository: https://github.com/lumen-assistive/lumen-plugins/tree/main/packages/hearing
+issue_tracker: https://github.com/lumen-assistive/lumen-plugins/issues
+homepage: https://github.com/lumen-assistive/lumen-plugins/tree/main/packages/hearing
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  lumen_sdk:
+    git:
+      url: https://github.com/lumen-assistive/lumen-sdk.git
+      ref: v0.1.0
+  meta: ^1.15.0
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.0

@@ -14,14 +14,14 @@ community or the core team, are added through pull requests. See
 
 | Package | Module | Status |
 |---|---|---|
-| [`packages/vedere`](packages/vedere) | Vedere (See) | Expiry date parsing and color naming; scene description, OCR beyond dates, banknote and medicine recognition deferred |
-| [`packages/sentire`](packages/sentire) | Sentire (Hear) | Transcript sessions, heuristic summarizer, sound alert mapping; offline ASR and diarization deferred |
-| [`packages/protezione`](packages/protezione) | Protezione (Safety) | Fall detector, SOS state machine, rules-based scam filter, emergency profile; live sensor wiring deferred |
-| [`packages/famiglia`](packages/famiglia) | Famiglia e caregiver | Pairing, shared calendar, daily status, consent-gated alerts; caregiver-side delivery deferred |
-| [`packages/parlare`](packages/parlare) | Parlare (Speak) | Augmentative communication phrase board with usage-ranked suggestions; text-to-speech output and pictogram images deferred |
-| [`packages/leggere`](packages/leggere) | Leggere e Studiare (Read and Study) | Italian syllable splitting and SM-2 spaced repetition flashcards; reading scanned text aloud deferred |
-| [`packages/ricordare`](packages/ricordare) | Ricordare (Remember) | Consent-gated person directory and recurring reminders; on-device face recognition deferred |
-| [`packages/muoversi`](packages/muoversi) | Muoversi (Move) | Proactive gait stability monitoring and a mobility aid profile; live sensor wiring deferred |
+| [`packages/vision`](packages/vision) | Vedere (Vision) | Expiry date parsing, color naming, WCAG contrast checking; scene description, OCR beyond dates, banknote and medicine recognition deferred |
+| [`packages/hearing`](packages/hearing) | Sentire (Hearing) | Transcript sessions, heuristic summarizer, sound alert mapping, caption line wrapping; offline ASR and diarization deferred |
+| [`packages/safety`](packages/safety) | Protezione (Safety) | Fall detector, SOS state machine, rules-based scam filter with per-indicator reasons, check-in scheduling, emergency profile; live sensor wiring deferred |
+| [`packages/family`](packages/family) | Famiglia e caregiver (Family) | Pairing, shared recurring calendar, daily status, caregiver notification composition, consent-gated alerts; caregiver-side delivery deferred |
+| [`packages/speech`](packages/speech) | Parlare (Speech) | Augmentative communication phrase board with usage-ranked suggestions and sentence composition; text-to-speech output and pictogram images deferred |
+| [`packages/reading`](packages/reading) | Leggere e Studiare (Reading) | Italian syllable splitting (word and text), SM-2 spaced repetition flashcards, reading time estimation; reading scanned text aloud deferred |
+| [`packages/memory`](packages/memory) | Ricordare (Memory) | Consent-gated person directory, recurring reminders with snooze, daily routine checklists; on-device face recognition deferred |
+| [`packages/mobility`](packages/mobility) | Muoversi (Mobility) | Proactive gait stability monitoring, rest break planning, a mobility aid profile; live sensor wiring deferred |
 
 Every package depends only on
 [`lumen_sdk`](https://github.com/lumen-assistive/lumen-sdk)'s public

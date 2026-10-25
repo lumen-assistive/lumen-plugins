@@ -5,10 +5,14 @@ package, link the proposal issue discussed in CONTRIBUTING.md.
 
 ## Which package(s) does this touch
 
-- [ ] `packages/vedere`
-- [ ] `packages/sentire`
-- [ ] `packages/protezione`
-- [ ] `packages/famiglia`
+- [ ] `packages/vision`
+- [ ] `packages/hearing`
+- [ ] `packages/safety`
+- [ ] `packages/family`
+- [ ] `packages/speech`
+- [ ] `packages/reading`
+- [ ] `packages/memory`
+- [ ] `packages/mobility`
 - [ ] A new package: `packages/____`
 - [ ] Repository-level (CI, CONTRIBUTING, root docs)
 

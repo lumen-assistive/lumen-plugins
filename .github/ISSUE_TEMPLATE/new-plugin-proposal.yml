@@ -6,7 +6,7 @@ body:
     id: module-name
     attributes:
       label: Module name
-      description: Lowercase, hyphen-free package name, for example "parlare".
+      description: Lowercase, hyphen-free English package name, for example "vision".
     validations:
       required: true
   - type: textarea

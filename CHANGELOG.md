@@ -6,6 +6,48 @@ governance changes). Each package under `packages/` keeps its own
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-25
+
+### Changed
+
+- Renamed every package's internal identifiers from Italian to English,
+  across this repository and every other repository that consumes
+  these packages:
+
+  | Old package | New package | Old id | New id |
+  |---|---|---|---|
+  | `lumen_plugin_vedere` | `lumen_plugin_vision` | `vedere` | `vision` |
+  | `lumen_plugin_sentire` | `lumen_plugin_hearing` | `sentire` | `hearing` |
+  | `lumen_plugin_protezione` | `lumen_plugin_safety` | `protezione` | `safety` |
+  | `lumen_plugin_famiglia` | `lumen_plugin_family` | `famiglia` | `family` |
+  | `lumen_plugin_parlare` | `lumen_plugin_speech` | `parlare` | `speech` |
+  | `lumen_plugin_leggere` | `lumen_plugin_reading` | `leggere` | `reading` |
+  | `lumen_plugin_ricordare` | `lumen_plugin_memory` | `ricordare` | `memory` |
+  | `lumen_plugin_muoversi` | `lumen_plugin_mobility` | `muoversi` | `mobility` |
+
+  Each `PluginManifest.nameIt` is unchanged (the real Italian product
+  name); only package names, directories, class names, and manifest
+  `id`s changed. `nameEn` is now a consistent English label for every
+  module (`Vedere`/`Sentire`/`Protezione` previously still showed their
+  Italian name even in the English locale).
+
+### Added
+
+- A new, real, tested function in every package: `ContrastChecker`
+  (vision), `CaptionFormatter` (hearing), `CheckInScheduler` (safety),
+  `CaregiverNotificationComposer` (family), `SentenceBuilder` (speech),
+  `ReadingTimeEstimator` (reading), `RoutineChecklistTracker` (memory),
+  `RestBreakPlanner` (mobility).
+- A real improvement to one existing function in every package:
+  `ExpiryDateParser` recognizes a `dd.mm.yyyy` separator; `Summarizer`
+  excludes trivially short sentences from selection; `ScamFilter`
+  checks three more indicators and reports each one individually
+  instead of one canned paragraph; `CalendarEvent`/`CalendarStore`
+  support daily and weekly recurrence; `PhraseUsageTracker` gained
+  `mostUsedOverall`; `ItalianSyllableSplitter` gained `splitText`;
+  `ReminderScheduler` gained `snooze`; `GaitStabilityMonitor` withholds
+  a verdict below a configurable minimum step count.
+
 ## [0.2.0] - 2026-10-25
 
 ### Added
