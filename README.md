@@ -18,6 +18,10 @@ community or the core team, are added through pull requests. See
 | [`packages/sentire`](packages/sentire) | Sentire (Hear) | Transcript sessions, heuristic summarizer, sound alert mapping; offline ASR and diarization deferred |
 | [`packages/protezione`](packages/protezione) | Protezione (Safety) | Fall detector, SOS state machine, rules-based scam filter, emergency profile; live sensor wiring deferred |
 | [`packages/famiglia`](packages/famiglia) | Famiglia e caregiver | Pairing, shared calendar, daily status, consent-gated alerts; caregiver-side delivery deferred |
+| [`packages/parlare`](packages/parlare) | Parlare (Speak) | Augmentative communication phrase board with usage-ranked suggestions; text-to-speech output and pictogram images deferred |
+| [`packages/leggere`](packages/leggere) | Leggere e Studiare (Read and Study) | Italian syllable splitting and SM-2 spaced repetition flashcards; reading scanned text aloud deferred |
+| [`packages/ricordare`](packages/ricordare) | Ricordare (Remember) | Consent-gated person directory and recurring reminders; on-device face recognition deferred |
+| [`packages/muoversi`](packages/muoversi) | Muoversi (Move) | Proactive gait stability monitoring and a mobility aid profile; live sensor wiring deferred |
 
 Every package depends only on
 [`lumen_sdk`](https://github.com/lumen-assistive/lumen-sdk)'s public
@@ -26,11 +30,10 @@ tagged release, and never accesses sensors or models directly. Each
 package's own README states plainly what it implements today and what
 it defers, and why.
 
-The modules on Lumen's longer-term roadmap (Parlare, Leggere e
-Studiare, Ricordare, Muoversi) have no package here yet. They are added
-the same way any new module is: as a pull request, once someone starts
-the work, following [CONTRIBUTING.md](CONTRIBUTING.md). This repository
-holds no empty placeholder packages.
+All eight modules on Lumen's roadmap now have a package here. Any
+future module is added the same way: as a pull request, following
+[CONTRIBUTING.md](CONTRIBUTING.md). This repository holds no empty
+placeholder packages.
 
 ## History
 

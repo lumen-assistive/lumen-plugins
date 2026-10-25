@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package: [vedere, sentire, protezione, famiglia]
+        package: [vedere, sentire, protezione, famiglia, parlare, leggere, ricordare, muoversi]
     uses: lumen-assistive/.github/.github/workflows/reusable-dart-ci.yml@main
     with:
       working-directory: packages/${{ matrix.package }}
